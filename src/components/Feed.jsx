@@ -7,7 +7,7 @@ import {fetchFromAPI} from '../Utils/fetchFromAPI';
 
 
 const Feed = () => {
-  const [selectedCategory, setselectedCategory] = useState('Coding');
+  const [selectedCategory, setselectedCategory] = useState('New');
   const [videos, setVideos] = useState([]);
 
 

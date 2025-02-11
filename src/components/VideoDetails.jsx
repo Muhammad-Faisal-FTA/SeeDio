@@ -5,6 +5,7 @@ import  ReactPlayer from 'react-player';
 import { Typography, Box, Stack} from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 
+import {loder} from './loder.gif';
 import { fetchFromAPI } from '../Utils/fetchFromAPI';
 import {Videos} from './';
 
@@ -20,7 +21,7 @@ const VideoDetails = () => {
     fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`)
      .then((data)=>setVideos(data.items));
   }, [id]);
-// if(!videoDetails) return<p>Loading...---...---.</p>;
+// (!videoDetails)? "": {loder};
 console.log("Data = "+videoDetails)
   console.log("Details for = "+id)
 
