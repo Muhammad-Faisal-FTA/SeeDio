@@ -85,3 +85,7 @@ a {
     width:200px;
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
