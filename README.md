@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+Video Feed App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern YouTube-like video browsing application built with React, Material UI, and React Router, integrated with the YouTube Data API.
+Search, play, and explore videos with a responsive design that works across desktop and mobile.
 
-## Available Scripts
+🚀 Features
 
-In the project directory, you can run:
+🔍 Search videos & channels in real-time
 
-### `npm start`
+🎥 Video playback with React Player
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📺 Channel details with video lists
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📂 Sidebar navigation with categories
 
-### `npm test`
+📱 Responsive design (desktop & mobile)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+⏳ Global loader with beautiful animation
 
-### `npm run build`
+⚡ Fast UI powered by Material UI & Tailwind CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend: React (Vite / CRA), JSX
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+UI Components: Material UI (MUI), Tailwind CSS
 
-### `npm run eject`
+Routing: React Router DOM v6
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+API: YouTube Data API v3
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Video Player: React Player
+```
+📂 Folder Structure
+src/
+ ├── components/
+ │    ├── Navbar.jsx
+ │    ├── SideBar.jsx
+ │    ├── VideoCard.jsx
+ │    ├── ChannelCard.jsx
+ │    ├── VideoDetails.jsx
+ │    ├── SearchFeed.jsx
+ │    ├── Feed.jsx
+ │    ├── Loader.jsx
+ │    └── index.js
+ ├── Utils/
+ │    ├── constants.js
+ │    └── fetchFromAPI.js
+ ├── App.jsx
+ ├── index.jsx
+ └── index.css
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+⚙️ Installation & Setup
 
-## Learn More
+Clone the repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git clone https://github.com/your-username/video-feed-app.git
+cd video-feed-app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm install
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Add your YouTube API Key
+Create a .env file in the root and add:
 
-### Making a Progressive Web App
+VITE_YOUTUBE_API_KEY=your_api_key_here
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Run the app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm run dev
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Visit 👉 http://localhost:5173
 
-### `npm run build` fails to minify
+📸 Screenshots
+🏠 Home Feed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔍 Search Results
+
+📺 Video Player
+
+🚧 Roadmap
+
+ Add dark/light theme toggle 🌙
+
+ Infinite scroll for feed 🔄
+
+ User authentication 👤
+
+ Playlist & favorites support ❤️
+
+🤝 Contributing
+
+Contributions are welcome! Please fork the repo and submit a pull request.
+
+📜 License
+
+This project is licensed under the MIT License.
